@@ -1,0 +1,5 @@
+# Keep the shipped files byte-identical on every platform: the host imports
+# lib/host/*.js directly and the browser half is served verbatim.
+* text=auto eol=lf
+*.png binary
+*.zst binary

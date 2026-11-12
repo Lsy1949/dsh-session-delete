@@ -1,0 +1,51 @@
+{
+  "name": "dsh-session-delete",
+  "version": "2.12.0",
+  "description": "A trash for DeepSeek Harness sessions and workspaces: records leave the session store instead of being destroyed, come back on demand, and can be deleted one by one or all at once; with a configurable folder, a sidebar panel, a settings page and a readable operation log.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "node": ">=24",
+    "dsh": ">=0.2.1-rc.2 <0.3.0"
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs && node test/client.mjs",
+    "check": "node --check client.js && node --check index.js"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "lib/**/*.js",
+    "README.md",
+    "README.zh.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "trash",
+    "sessions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lsy1949/dsh-session-delete.git"
+  },
+  "author": "Lsy1949",
+  "license": "MIT"
+}

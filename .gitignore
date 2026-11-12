@@ -1,0 +1,14 @@
+# Logs / editor / OS noise
+*.log
+npm-debug.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Dependencies
+node_modules/
+
+# Local scratch
+.tmp/
+*.local.*
